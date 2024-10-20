@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
+        <script src=" {{ url_for('static', filename='js/camera.js') }}"></script>
+        <title>Distraction Prevention App</title>
+    </head>
+    
+    
+    <body>
+        <p>testing session</p>
+
+        <video autoPlay={true} playsInline={true} muted={true} id="vid"></video>
+        
+    </body>
+</html>
