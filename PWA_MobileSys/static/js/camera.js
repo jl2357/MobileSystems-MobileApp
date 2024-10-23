@@ -3,6 +3,7 @@ var video, ctx, canvas, context;
 canvas = document.createElement('canvas');
 context = canvas.getContext('2d');
 
+console.log("in js")
 if(navigator && navigator.mediaDevices){
     //get the camera stream of the front facing camera
     const options = { audio: false, video: { facingMode: "user", width: 300, height: 300  } }

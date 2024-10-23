@@ -11,14 +11,33 @@
         <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
         <script src=" {{ url_for('static', filename='js/camera.js') }}"></script>
         <link rel="manifest" href="/manifest.json">
+        
         <title>Distraction Prevention App</title>
     </head>
     
     
     <body>
-        <p>testing session</p>
-
-        <video id="vid"></video>
         
+        <!-- icons -->
+        <img src="static/icons/rocket.png" class="rocketimg_session" alt="rocket image">
+        <img src="static/icons/unknown_planet.png" class="unknownplanet_session" alt="planet image">
+       
+        <div class="Title">
+            <h1>Reaching destination in...</h1>
+        </div> <!-- title -->
+
+        <!-- display the front-facing camera output -->
+       <video id="vid"></video>
+        
+        
+
+        <!-- nav bar -->
+        <div class = "navbar">
+            <a href="home" class="active">Home</a>
+            <a href="planets">Planets</a>
+            <a href="history">Session History</a>
+            <a href="/">Logout</a> <!-- return home -->
+        </div>
+
     </body>
-</html>
+</html> 

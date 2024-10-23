@@ -10,13 +10,12 @@
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
         <link rel="manifest" href="/manifest.json">
-        
-        
         <title>Distraction Prevention App</title>
     </head>
     
     
     <body>
+        <!-- icons -->
         <img src="static/icons/rocket.png" class="rocketimg_session" alt="rocket image">
         <img src="static/icons/unknown_planet.png" class="unknownplanet_session" alt="planet image">
         <div class="Title">
@@ -60,7 +59,7 @@
             </div>
         </div>
     <form action=" {{ url_for('session') }}">
-        <input class="startSessionButton" type="submit" value="Start Focus Session"/>
+        <input class="greenButton" type="submit" value="Start Focus Session"/>
     </form>
 
      <!-- nav bar -->

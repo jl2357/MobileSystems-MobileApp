@@ -120,6 +120,7 @@ body {
     padding-top: 10%;
     padding-left: 5%;
     rotate: 50deg;
+    
 }
 .unknownplanet_session {
     width: 23%;
@@ -127,8 +128,9 @@ body {
     padding-top: 20%;
     padding-right: 5%;
     float: right;
+    
 }
-.startSessionButton{
+.greenButton{
     background-color:#1cfac6;
     border: none;
     color: black;
@@ -174,6 +176,12 @@ body {
     color: black;
     padding-top: 25%;
     text-align: center;
+}
+
+#vid {
+    display: block;
+    padding-left: 15%;
+    padding-top: 30%;
 }
 /* styling nav bar */
 .navbar{

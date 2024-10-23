@@ -15,26 +15,15 @@
     
     
     <body>
-        <img src="static/icons/rocket.png" class="LoginLogo" alt="rocket app logo">
         <div class="Title">
-            <h1>Distraction Prevention App</h1>
-        </div> <!-- title -->
+            <h1>Session Failed!</h1>
+        </div> <!-- login title -->
+        
+        <p>The rocket has self-destructed</p>
+        
+        <form action=" {{ url_for('/home') }}">
+            <input class="greenButton" type="submit" value="Return home"/>
+        </form>
 
-        <div class="LoginLabels">
-            <label for="username">Username:</label> 
-            <br>
-            <input type="text" id="username" name="username">
-            <br><br>
-            <label for="password" style="padding-top: 15%">Password:</label>
-            <br>
-            <input type="password" id="password" name="password">
-
-        </div> <!-- login labels-->
-    
-    <form action=" {{ url_for('home') }}">
-        <input class="actionButton" type="submit" value="Login"/>
-    </form>
-
-   
     </body>
 </html>
