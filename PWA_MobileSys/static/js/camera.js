@@ -43,7 +43,7 @@ function sendFrames() {
 
     const b64img = canvas.toDataURL('image/jpeg');
 
-    fetch('http://192.168.1.150:5000/process_frames', {
+    fetch('http://192.168.1.150:5500/process_frames', {
         method: 'POST',
         body: JSON.stringify({ image: b64img }),
         headers: {

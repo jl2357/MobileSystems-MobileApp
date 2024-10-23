@@ -93,7 +93,6 @@ body {
 }
 
 #password {
-    
     text-align: left;
     padding: 8px 90px;
     margin: 12px 0;
@@ -115,6 +114,20 @@ body {
 
 }
 
+.rocketimg_session {
+    width: 25%;
+    height: 13%;
+    padding-top: 10%;
+    padding-left: 5%;
+    rotate: 50deg;
+}
+.unknownplanet_session {
+    width: 23%;
+    height: 8%;
+    padding-top: 20%;
+    padding-right: 5%;
+    float: right;
+}
 .startSessionButton{
     background-color:#1cfac6;
     border: none;
@@ -146,7 +159,6 @@ body {
 }
 .durationSet{
     display: inline-block;
-    
 
 }
 
