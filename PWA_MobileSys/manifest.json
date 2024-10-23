@@ -1,0 +1,16 @@
+{
+    "name": "distraction prevention app",
+    "short_name": "DPA",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#FFFFF",
+    "background_color": "#FFFFF",
+    "icons": [
+    {
+      "src": "static/icons/rocket.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    } ]
+  }

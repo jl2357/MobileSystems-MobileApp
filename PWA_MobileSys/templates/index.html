@@ -9,14 +9,16 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
-
+        <link rel="manifest" href="/manifest.json">
+        
+        
         <title>Distraction Prevention App</title>
     </head>
     
     
     <body>
-        <img src="static/css/rocket.png" class="LoginLogo" alt="rocket app logo">
-        <div class="LoginTitle">
+        <img src="static/icons/rocket.png" class="LoginLogo" alt="rocket app logo">
+        <div class="Title">
             <h1>Distraction Prevention App</h1>
         </div> <!-- login title -->
 
@@ -31,8 +33,10 @@
 
         </div> <!-- login labels-->
     
-    <form action=" {{ url_for('session') }}">
-        <input class="bluebutton" type="submit" value="Login"/>
+    <form action=" {{ url_for('home') }}">
+        <input class="actionButton" type="submit" value="Login"/>
     </form>
+
+   
     </body>
 </html>

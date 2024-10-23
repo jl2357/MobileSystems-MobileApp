@@ -10,6 +10,7 @@
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
         <script src=" {{ url_for('static', filename='js/camera.js') }}"></script>
+        <link rel="manifest" href="/manifest.json">
         <title>Distraction Prevention App</title>
     </head>
     
@@ -17,7 +18,7 @@
     <body>
         <p>testing session</p>
 
-        <video autoPlay={true} playsInline={true} muted={true} id="vid"></video>
+        <video id="vid"></video>
         
     </body>
 </html>

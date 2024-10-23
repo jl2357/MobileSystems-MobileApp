@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
+        <link rel="manifest" href="/manifest.json">
+        
+        
+        <title>Distraction Prevention App</title>
+    </head>
+    
+    
+    <body>
+        <div class="Title">
+            <h1>Welcome</h1>
+        </div> <!-- title -->
+    
+    <form action=" {{ url_for('sessionTimerSetup') }}">
+        <input class="actionButton" type="submit" value="Focus Session"/>
+    </form>
+
+     <!-- nav bar -->
+     <div class = "navbar">
+        <a href="home" class="active">Home</a>
+        <a href="planets">Planets</a>
+        <a href="history">Session History</a>
+        <a href="/">Logout</a>
+     </div>
+
+    </body>
+</html>

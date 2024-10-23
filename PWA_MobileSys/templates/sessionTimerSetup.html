@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
+        <link rel="manifest" href="/manifest.json">
+        
+        
+        <title>Distraction Prevention App</title>
+    </head>
+    
+    
+    <body>
+        <div class="Title">
+            <h1>How long will you focus?</h1>
+        </div> <!-- login title -->
+        
+        <div id="durationLabel">
+            <h3>Hours : Minutes</h3>
+        </div>
+       
+        <div id="durationSetContainer">
+
+            <div class = "durationSet">
+                <!-- duration select hours -->
+                <select name="hours">
+                    <option value="0hours">0</option>
+                    <option value="1hour">1</option>
+                </select>
+            </div>
+            
+            <div class = "durationSet">
+                <h1>:</h1>
+            </div>
+
+            <div class = "durationSet">
+                <!-- duration select minutes -->
+                <select name="minutes">
+                    <option value="0min">0</option>
+                    <option value="5min">5</option>
+                    <option value="10min">10</option>
+                    <option value="15min">15</option>
+                    <option value="20min">20</option>
+                    <option value="25min">25</option>
+                    <option value="30min">30</option>
+                    <option value="35min">35</option>
+                    <option value="40min">40</option>
+                    <option value="45min">45</option>
+                    <option value="50min">50</option>
+                    <option value="55min">55</option>
+                </select>
+            </div>
+        </div>
+    <form action=" {{ url_for('session') }}">
+        <input class="startSessionButton" type="submit" value="Start Focus Session"/>
+    </form>
+
+     <!-- nav bar -->
+     <div class = "navbar">
+        <a href="home" class="active">Home</a>
+        <a href="planets">Planets</a>
+        <a href="history">Session History</a>
+        <a href="/">Logout</a> <!-- return home -->
+     </div>
+
+    </body>
+</html>
