@@ -152,6 +152,11 @@ body {
     color: black;
 }
 
+#detected_object {
+    color: black;
+    text-align: center;
+
+}
 #durationSetContainer {
     padding-left: 20%;
 }
@@ -164,6 +169,12 @@ body {
 
 }
 
+#planetimg {
+    height: 40%;
+    width: 80%;
+    padding-left: 10%;
+
+}
 .durationSet select{
     margin: 20px 20px;
     width: 80px;
@@ -171,7 +182,11 @@ body {
     font-size: 20px;
 }
 
-
+#countdownTimer {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
 #durationLabel{
     color: black;
     padding-top: 25%;

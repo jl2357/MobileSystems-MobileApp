@@ -3,11 +3,11 @@ from time import sleep
 import cv2
 from ultralytics import YOLO
 import numpy as np
-
+from flask import jsonify
 class sessionRecog():
     # global variables
     model = None
-    
+
     # default constructor
     def __init__(self):
         self.model = YOLO('yolov8n.pt')
@@ -24,11 +24,18 @@ class sessionRecog():
         results = self.model(img)
         for i in results:
             boxes = i.boxes
-            
+
             if len(boxes) != 0:
-                print(i.boxes.cls)
-                return True
+                box = i.boxes[0]
+                item_id = int(box.cls)
+                item_name = self.model.names[item_id]
+                self.detected = {'value': True, 'item': item_name}
+                return jsonify(self.detected)
+            
             else:
-                return False
+                self.detected = {'value': False, 'item': None}
+                return jsonify(self.detected)
         
+    def getDetected(self):
+        return self.detected
       

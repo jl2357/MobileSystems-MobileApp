@@ -16,14 +16,16 @@
     
     <body>
         <div class="Title">
-            <h1>Session Failed!</h1>
-        </div> <!-- login title -->
-        
-        <p style="color: black; text-align: center;">The rocket has self-destructed</p>
-        
-        <form action=" {{ url_for('home') }}">
-            <input class="greenButton" type="submit" value="Return home"/>
-        </form>
+            <h1>Session History</h1>
+        </div> <!-- title -->
+
+     <!-- nav bar -->
+     <div class = "navbar">
+        <a href="home">Home</a>
+        <a href="planetsLibrary" >Planets</a>
+        <a href="history" class="active">Session History</a>
+        <a href="/">Logout</a> <!-- return home -->
+     </div>
 
     </body>
 </html>
