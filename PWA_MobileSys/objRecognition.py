@@ -4,6 +4,7 @@ import cv2
 from ultralytics import YOLO
 import numpy as np
 from flask import jsonify
+
 class sessionRecog():
     # global variables
     model = None

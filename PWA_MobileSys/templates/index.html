@@ -20,6 +20,7 @@
             <h1>Distraction Prevention App</h1>
         </div> <!-- title -->
 
+        <form action=" {{ url_for('verifyLogin') }}" method="POST">
         <div class="LoginLabels">
             <label for="username">Username:</label> 
             <br>
@@ -31,7 +32,7 @@
 
         </div> <!-- login labels-->
     
-    <form action=" {{ url_for('home') }}">
+    
         <input class="actionButton" type="submit" value="Login"/>
     </form>
 
