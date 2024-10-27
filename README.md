@@ -1,4 +1,5 @@
 ## **Distraction Prevention App**
+Please note: An iOS device and MacBook Pro has been used throughout the entire development process. The installation on windows may be slightly different to Mac.A local database was created, meaning it was unable to be added to the GitHub. Steps have been provided below to demonstrate how to install the MongoDB database and add a user for login. If installation does not work, a video of demonstrating the app has been included in the submission folder.
 
 # **Instructions for installation**
 To install the project, please follow these steps:
