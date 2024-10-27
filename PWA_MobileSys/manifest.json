@@ -8,7 +8,7 @@
     "background_color": "#FFFFF",
     "icons": [
     {
-      "src": "static/icons/rocket.png",
+      "src": "static/icons/rocket.png", 
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
