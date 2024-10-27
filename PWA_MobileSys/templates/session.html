@@ -13,7 +13,22 @@
         
         
         <link rel="manifest" href="/manifest.json">
-        
+        <!-- add service worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+
+              window.addEventListener('load', function() {
+                    // if sw connection is successful
+                navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                  console.log('SW: Registration successful - scope: ', registration.scope);
+                  // if sw connection unsuccessful
+                }, function(err) {
+                  console.log('SW: Registration failed - err', err);
+                });
+            });
+            }
+          </script>
+
         <title>Distraction Prevention App</title>
     </head>
     
@@ -26,20 +41,13 @@
             <h1>Reaching destination in...</h1>
         </div> <!-- title -->
 
-        <div id="countdownTimer">0 hours, 0 minutes</div>
+        <div id="countdownTimer">-- hours, -- minutes</div>
 
         <!-- display the front-facing camera output -->
        <video id="vid"></video>
         
        <div id="detected_object"></div>
 
-        <!-- nav bar -->
-        <div class = "navbar">
-            <a href="home" class="active">Home</a>
-            <a href="planetsLibrary">Planets</a>
-            <a href="history">Session History</a>
-            <a href="/">Logout</a> <!-- return home -->
-        </div>
 
     </body>
 </html> 

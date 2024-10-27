@@ -5,23 +5,24 @@ class loginVerify():
         matched_username = False
         matched_password = False
 
+        # get an instance of the collection
         collection = db.User_Logins
 
+        # check if usernames match
         x = collection.distinct("username")
         for usernames in x:
-            print(str(usernames) + " " + str(input_username))
             if str(input_username) == str(usernames):
                 matched_username = True
         
+        #check if passwords match
         y = collection.distinct("password")
         for passwords in y:
-            print(passwords + " " + input_password)
             if str(input_password) == str(passwords):
                 matched_password = True
 
         if matched_username and matched_password:
-            print("returned true")
+            # if match is found
             return True
         else:
-            print("returned false")
+            # if no match is found
             return False

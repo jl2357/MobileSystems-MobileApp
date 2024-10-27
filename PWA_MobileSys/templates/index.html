@@ -9,7 +9,24 @@
         <meta name="viewport" content="initial-scale=1, width=device-width">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}">
+
+        <!-- add manifest file for pwa to behave like a native app-->
         <link rel="manifest" href="/manifest.json">
+        <!-- add service worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+
+              window.addEventListener('load', function() {
+                    // if sw connection is successful
+                navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                  console.log('SW: Registration successful - scope: ', registration.scope);
+                  // if sw connection unsuccessful
+                }, function(err) {
+                  console.log('SW: Registration failed - err', err);
+                });
+            });
+            }
+          </script>
         <title>Distraction Prevention App</title>
     </head>
     
@@ -24,11 +41,11 @@
         <div class="LoginLabels">
             <label for="username">Username:</label> 
             <br>
-            <input type="text" id="username" name="username">
+            <input style="color: black;" type="text" id="username" name="username">
             <br><br>
             <label for="password" style="padding-top: 15%">Password:</label>
             <br>
-            <input type="password" id="password" name="password">
+            <input style="color: black;" type="password" id="password" name="password">
 
         </div> <!-- login labels-->
     
