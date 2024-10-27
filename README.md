@@ -1,2 +1,5 @@
-# MobileSystems-MobileApp
- A distraction preventation app using the mobile's camera and YOLOv8
+## **Distraction Prevention App**
+
+# **Instructions for installation**
+To install the project, please follow these steps:
+1. Clone the Github repository
