@@ -25,9 +25,6 @@ if(navigator && navigator.mediaDevices){
         video.onloadedmetadata = function(e) {
           video.play();
         };
-        
-
-        
     })
     //error handling
     .catch(function(err) {
