@@ -42,8 +42,8 @@ def users():
     # python dictionaries are used to store values in pairs
     data = {
         "_id": _id,
-        "username": "admin2",
-        "password": "admin22"
+        "username": "admin",
+        "password": "admin"
     }
 
     
